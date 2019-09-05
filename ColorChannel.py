@@ -259,7 +259,10 @@ class DetectionChannel(Channel):
     def hasLabels(self):
         return self.label_img is not None
 
-    def countCells(self, layerVals):
+    def countCells(self, thresholds, layerVals):
+        print("hi")
+        self.thresholds = thresholds
+        print(self.thresholds)
         counts = ip.countCells(self.label_img > 0, 'single', self.thresholds, layerVals)
         return counts
 
@@ -359,7 +362,8 @@ class ResultsChannel(Channel):
 
         counts = [ip.countCells(image > 0, 'coloc', self.thresholds, layerVals)]
         for chan in self.channels:
-            counts.append(chan.countCells(layerVals))
+            counts.append(chan.countCells(self.thresholds, layerVals))
+            print(counts)
         if countAll:
             for col in coloc:
                 counts.append(ip.countCells(col > 0, 'coloc', self.thresholds, layerVals))
@@ -367,7 +371,7 @@ class ResultsChannel(Channel):
             self.cell_counts = np.stack(counts, axis=1)
         else:
             self.cell_counts = np.hstack(counts)
-            self.cell_count = self.cell_counts.reshape(1, self.cell_counts.shape[0])
+            self.cell_counts = self.cell_counts.reshape(1, self.cell_counts.shape[0])
         string = "Layer / {}".format(self.name)
         string += "".join(['/ ' + c for c in self.columnNames])
         string += '\n'

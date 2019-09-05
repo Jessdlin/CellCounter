@@ -43,6 +43,7 @@ class CellCounterApp(QMainWindow, Layout.Mixin, Callbacks.Mixin):
         self.detectionChannels = []
         self.detectionChannels_labels = []
         self.reporterChannel = None
+        self.expressionLevelArray = 0
         self.dChannels = []
         self.contains_meta_data = False
         self.n_dim = 2

@@ -225,7 +225,7 @@ class Mixin:
             return
         self.channels[self.current_tab].runDetection(self.tempsize, self.variance, self.minSize, self.maxSize,
                                                      self.threshold)
-        if self.channels[self.Tabs[self.reporterChannel]].hasLabels():
+        if self.reporterChannel is not None and self.channels[self.Tabs[self.reporterChannel]].hasLabels():
             self.expressionTest_button.setEnabled(True)
 
     def layer_button_callback(self):
@@ -412,4 +412,5 @@ class Mixin:
     def brushsize_slider_callback(self, value):
         self.brushsize = value
         self.brushsize_label.setText("Brush Size: {}".format(self.brushsize))
-        self.channels[self.current_tab].set_brushsize(value)
+        if self.current_tab != self.Tabs['results']:
+            self.channels[self.current_tab].set_brushsize(value)

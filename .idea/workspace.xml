@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b1b4e80-72c4-4bec-902e-86a0b58a3094" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/Callbacks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CellCounterApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellCounterApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ColorChannel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ColorChannel.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Layout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="179" column="32" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Callbacks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="235" column="49" selection-start-line="235" selection-start-column="49" selection-end-line="235" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CellCounterApp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ColorChannel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="268" column="28" lean-forward="true" selection-start-line="268" selection-start-column="28" selection-end-line="268" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ImageProc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="78" column="34" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>brus</find>
+      <find>self.current_tab</find>
+      <find>countcell</find>
+      <find>expressi</find>
+      <find>channelTyp</find>
+      <find>results</find>
+      <find>expo</find>
+      <find>express</find>
+      <find>expressionlevel</find>
+      <find>count</find>
+      <find>run_butt</find>
+      <find>reporter</find>
+      <find>self.repo</find>
+      <find>report</find>
+      <find>reporterChannel</find>
+      <find>self.report</find>
+      <find>self.reporterChannel</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CellCounterApp.py" />
+        <option value="$PROJECT_DIR$/Callbacks.py" />
+        <option value="$PROJECT_DIR$/ColorChannel.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="252" />
+    <option name="y" value="87" />
+    <option name="width" value="1409" />
+    <option name="height" value="803" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Cell_Counter_Version2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cell_Counter_Version2" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b1b4e80-72c4-4bec-902e-86a0b58a3094" name="Default Changelist" comment="" />
+      <created>1567712553447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567712553447</updated>
+      <workItem from="1567712565181" duration="2532000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2532000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="252" y="87" width="1409" height="803" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945135" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ImageProc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CellCounter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="179" column="32" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CellCounterApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Callbacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="235" column="49" selection-start-line="235" selection-start-column="49" selection-end-line="235" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ColorChannel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="268" column="28" lean-forward="true" selection-start-line="268" selection-start-column="28" selection-end-line="268" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

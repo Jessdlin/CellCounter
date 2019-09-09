@@ -260,9 +260,7 @@ class DetectionChannel(Channel):
         return self.label_img is not None
 
     def countCells(self, thresholds, layerVals):
-        print("hi")
         self.thresholds = thresholds
-        print(self.thresholds)
         counts = ip.countCells(self.label_img > 0, 'single', self.thresholds, layerVals)
         return counts
 
@@ -284,7 +282,13 @@ class DetectionChannel(Channel):
 
     def findCellsPixelValue(self, img):
         self.areaThreshold = self.findAreaThreshold()
-        expressionLevelAvg, expressionLevelArray = ip.findCellsPixelValue(self.label_img_item.image[:, :, super().colors[self.c]], self.areaThreshold, img)
+
+        if len(self.layerlines) == 0:
+            layerVals = None
+        else:
+            layerVals = [layer.value() for layer in self.layerlines]
+
+        expressionLevelAvg, expressionLevelArray = ip.findCellsPixelValue(self.label_img_item.image[:, :, super().colors[self.c]].copy(), self.areaThreshold, img, layerVals)
         return expressionLevelAvg, expressionLevelArray
 
 
@@ -399,7 +403,7 @@ class ResultsChannel(Channel):
         np.savetxt(full_fn + ".csv", self.cell_counts, fmt='%d', delimiter=',',
                    header=self.name + "".join([', ' + c for c in self.columnNames]), comments="")
         if reporterChannel != None:
-            np.savetxt(full_fn + "_Expression_Test_results.csv", expressionLevelArray, fmt='%1.3f', delimiter = ',')
+            np.savetxt(full_fn + "_Expression_Test_results.csv", expressionLevelArray, fmt='%s', delimiter = ',')
 
         channelLabels = []
         channelNames = []

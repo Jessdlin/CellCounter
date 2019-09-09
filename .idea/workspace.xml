@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b1b4e80-72c4-4bec-902e-86a0b58a3094" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/Callbacks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CellCounterApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellCounterApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ColorChannel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ColorChannel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageProc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageProc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Callbacks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="235" column="49" selection-start-line="235" selection-start-column="49" selection-end-line="235" selection-end-column="49" />
+            <state relative-caret-position="203">
+              <caret line="330" column="13" selection-start-line="330" selection-start-column="8" selection-end-line="330" selection-end-column="13" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ColorChannel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="268" column="28" lean-forward="true" selection-start-line="268" selection-start-column="28" selection-end-line="268" selection-end-column="28" />
+            <state relative-caret-position="312">
+              <caret line="405" column="96" selection-start-line="405" selection-start-column="96" selection-end-line="405" selection-end-column="96" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -62,13 +62,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ImageProc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="78" column="34" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="34" />
+            <state relative-caret-position="390">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/histogram.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="9" selection-start-line="6" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,12 +94,10 @@
       <find>self.current_tab</find>
       <find>countcell</find>
       <find>expressi</find>
-      <find>channelTyp</find>
       <find>results</find>
       <find>expo</find>
       <find>express</find>
       <find>expressionlevel</find>
-      <find>count</find>
       <find>run_butt</find>
       <find>reporter</find>
       <find>self.repo</find>
@@ -95,6 +105,17 @@
       <find>reporterChannel</find>
       <find>self.report</find>
       <find>self.reporterChannel</find>
+      <find>findcellspi</find>
+      <find>label_img_item</find>
+      <find>self.</find>
+      <find>getlabels</find>
+      <find>image</find>
+      <find>layer.v</find>
+      <find>findcells</find>
+      <find>expression</find>
+      <find>layerli</find>
+      <find>channelTyp</find>
+      <find>count</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,12 +127,13 @@
         <option value="$PROJECT_DIR$/CellCounterApp.py" />
         <option value="$PROJECT_DIR$/Callbacks.py" />
         <option value="$PROJECT_DIR$/ColorChannel.py" />
+        <option value="$PROJECT_DIR$/ImageProc.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="252" />
-    <option name="y" value="87" />
+    <option name="x" value="50" />
+    <option name="y" value="23" />
     <option name="width" value="1409" />
     <option name="height" value="803" />
   </component>
@@ -163,15 +185,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567712553447</updated>
-      <workItem from="1567712565181" duration="2532000" />
+      <workItem from="1567712565181" duration="9034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2532000" />
+    <option name="totallyTimeSpent" value="9034000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="252" y="87" width="1409" height="803" extended-state="0" />
+    <frame x="50" y="23" width="1409" height="803" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -203,16 +225,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ImageProc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CellCounter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -242,22 +254,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Callbacks.py">
+    <entry file="file://$PROJECT_DIR$/histogram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="235" column="49" selection-start-line="235" selection-start-column="49" selection-end-line="235" selection-end-column="49" />
+        <state relative-caret-position="90">
+          <caret line="6" column="9" selection-start-line="6" selection-end-line="7" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ColorChannel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="268" column="28" lean-forward="true" selection-start-line="268" selection-start-column="28" selection-end-line="268" selection-end-column="28" />
+        <state relative-caret-position="312">
+          <caret line="405" column="96" selection-start-line="405" selection-start-column="96" selection-end-line="405" selection-end-column="96" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Callbacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="330" column="13" selection-start-line="330" selection-start-column="8" selection-end-line="330" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageProc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

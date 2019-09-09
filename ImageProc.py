@@ -45,8 +45,9 @@ def findCells(img, size, variance, minSize, maxSize, threshold=.125):
     #print(cells3.shape)
     return cells3
 
-def findCellsPixelValue(labels, areaThreshold, img):
+def findCellsPixelValue(labels, areaThreshold, img, l=None):
     label_img = labels.T #labeled binary image
+
     label_img[label_img == 255] = 1 #convert to 1 so can multiply
     original_img = img #original color channel image
     x = original_img.shape[0] #width
@@ -60,35 +61,64 @@ def findCellsPixelValue(labels, areaThreshold, img):
     nb_components, output, stats, centroids = cv2.connectedComponentsWithStats(cell_img2, connectivity=8) #get centroids
 
     expressionLevelArray = []
+    prevLayerVal = 0
+    layerNum = 1
 
+    currentCell = []
+    layerExpressionLevelArray = []
 
-    for index, center in enumerate(centroids[1:]): #go through each centroid
-        dist_from_center = np.sqrt((X - center[1]) ** 2 + (Y - center[0]) ** 2) #calculating distances from centroid across ogrid
-        mask = dist_from_center <= radius #keeping cell values that are acceptable
+    if l is None:
+        layerValues = [x]
+    else:
+        layerValues = l.copy()
+        layerValues.append(x)
+    print(layerValues)
+    for layer in layerValues:
+        for index, center in enumerate(centroids[1:]): #go through each centroid
+            dist_from_center = np.sqrt((X - center[1]) ** 2 + (Y - center[0]) ** 2) #calculating distances from centroid across ogrid
+            mask = dist_from_center <= radius #keeping cell values that are acceptable
 
-        masked_img = cell_img.copy() #copy original image
-        masked_img[~mask] = 0 #apply mask
+            masked_img = cell_img.copy() #copy original image
+            masked_img[~mask] = 0 #apply mask
 
-        masked_img[masked_img == 0] = 'nan'
-        cellExpressionLevel = np.nanmean(masked_img)
-        expressionLevelArray.append(cellExpressionLevel)
+            masked_img[masked_img == 0] = 'nan'
+            cellExpressionLevel = np.nanmean(masked_img)
+            expressionLevelArray.append(cellExpressionLevel)
+
+            if prevLayerVal <= center[1] < layer:
+                currentCell.append(cellExpressionLevel)
+                currentCell.append(layerNum)
+                layerExpressionLevelArray.append(currentCell)
+                currentCell = []
+
+        layerNum += 1
+        prevLayerVal = layer
 
     expressionLevelAvg = np.mean(expressionLevelArray)
-    return expressionLevelAvg, expressionLevelArray
+
+    return expressionLevelAvg, layerExpressionLevelArray
 
 def countCells(bin_img, channelType, thresholds, l=None):
     layerNums = []  # cell count per layer array
     layerCount = 0  # cell count for current layer
     # print(len(l))
-    layerValues = l.copy()  # where the layers are
+
     y = 0
     x = 0
     height = bin_img.shape[1]
     # print(len(layerValues))
-    if layerValues is None:
+
+    if l is None:
         layerValues = [height]
     else:
+        layerValues = l.copy() # where the layers are
         layerValues.append(height)
+
+    #if layerValues is None:
+    #    layerValues = [height]
+    #else:
+    #    layerValues.append(height)
+
     labels = skm.label(bin_img)
     stats = skm.regionprops(labels)
     prevLayerVal = 0
